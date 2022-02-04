@@ -7,20 +7,13 @@ char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursd
 
 void setup () {
 
-#ifndef ESP8266
-  while (!Serial); // for Leonardo/Micro/Zero
-#endif
-
   Serial.begin(115200);
 
-  delay(3000); // wait for console opening
-
+  Tony.begin();  //----  begin Library
   if (! rtc.begin()) {
     Serial.println("Couldn't find RTC");
     while (1);
   }
-  
-  Tony.begin();  //----  begin Library
 
   if (rtc.lostPower()) {
     Serial.println("RTC lost power, lets set the time!");

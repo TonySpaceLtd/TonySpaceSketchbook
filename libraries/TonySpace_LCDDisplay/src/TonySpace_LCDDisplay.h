@@ -4,7 +4,7 @@
 
 #include "Arduino.h"
 #include "TonySpace_LCDST7789.h"
-#include "lvgl/lvgl.h"
+#include "TonySpace_LVGL.h"
 
 class TonySpace_LCDDisplay
 {

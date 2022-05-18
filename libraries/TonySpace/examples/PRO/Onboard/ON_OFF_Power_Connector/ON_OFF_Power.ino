@@ -10,8 +10,8 @@ void setup()
 
 void loop() 
 {
-  onPower(); //---- Call function on power connector
+  Tony.onPower(); //---- Call function on power connector
   delay(5000); 
-  offPower(); //---- Call function off power connector
+  Tony.offPower(); //---- Call function off power connector
   delay(5000); 
 }

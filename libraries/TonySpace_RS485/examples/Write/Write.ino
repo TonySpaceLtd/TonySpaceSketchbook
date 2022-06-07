@@ -8,7 +8,7 @@ void setup()
     Tony.begin();  //----  begin Library
     
 //--------- RS485 Module Config ---------//
-    RS485.slot(SLOT1);    //  Select slot such as SLOT1, SLOT1_U, SLOT2, SLOT2_U, SLOT3, SLOT3_U ...
+    RS485.setSlot(SLOT1);    //  Select slot such as SLOT1, SLOT1_U, SLOT2, SLOT2_U, SLOT3, SLOT3_U ...
                           //  SLOTx_U = Floor 2
     RS485.begin(9600);  // Select buad rate 
 //--------------------------------------//

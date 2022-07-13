@@ -12,7 +12,7 @@ Ticker tick; /* timer for interrupt handler */
 
 #define LV_HOR_RES_MAX  320
 static lv_disp_draw_buf_t disp_buf;
-#define MUX_BUF 100
+#define MUX_BUF 10
 static lv_color_t buf_1[LV_HOR_RES_MAX * MUX_BUF];
 //static lv_color_t buf_2[LV_HOR_RES_MAX * MUX_BUF];
 

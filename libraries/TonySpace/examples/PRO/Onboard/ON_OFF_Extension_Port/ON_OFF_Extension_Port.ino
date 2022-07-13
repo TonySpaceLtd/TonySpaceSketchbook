@@ -10,8 +10,8 @@ void setup()
 
 void loop() 
 {
-  Tony.onExtension(); //---- Call function on power extension port
+  onExtension(); //---- Call function on power extension port
   delay(5000); 
-  Tony.offExtension(); //---- Call function off power extension port
+  offExtension(); //---- Call function off power extension port
   delay(5000); 
 }

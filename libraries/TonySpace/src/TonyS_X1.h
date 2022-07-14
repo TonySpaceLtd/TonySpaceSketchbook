@@ -67,7 +67,7 @@ public:
 	void handleData(uint8_t pin);
 	 
 	HardwareSerial SerialBegin(uint8_t slot,unsigned long baud,uint32_t config=SERIAL_8N1, int8_t rxPin=-1, int8_t txPin=-1, bool invert=false, unsigned long timeout_ms = 20000UL); //Serial
-	
+	void SerialBegin(HardwareSerial *uart,uint8_t slot,unsigned long baud, uint32_t config=SERIAL_8N1);
 private:
 	
 };

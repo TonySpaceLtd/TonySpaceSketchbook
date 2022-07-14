@@ -9,7 +9,8 @@ EC25_SER::EC25_SER()
 }
 void EC25_SER::begin(uint8_t slot,unsigned long baud)
 {
-	ser_LTE = Tony.SerialBegin(slot,baud);
+	//ser_LTE = Tony.SerialBegin(slot,baud);
+	Tony.SerialBegin(&ser_LTE,slot,baud);
 }
 EC_Resp EC25_SER::waitString(String data[],uint8_t len,long tout)
 {

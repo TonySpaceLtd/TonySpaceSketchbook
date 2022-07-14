@@ -3,7 +3,7 @@ HardwareSerial HWSerial(NULL);
 void setup() {
   Serial.begin(115200);
   Tony.begin();
-  HWSerial = Tony.SerialBegin(SLOT2,9600);
+  Tony.SerialBegin(&HWSerial,SLOT2,9600);
 }
 void loop() {
   if(HWSerial.available())
